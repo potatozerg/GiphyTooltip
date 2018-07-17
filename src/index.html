@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GiphyTooltip</title>
+    <base href="/" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-sanitize.min.js"></script>
+    <script src="services/api.js"></script>
+    <script src="controllers.js"></script>
+
+  </head>
+  <body ng-app="mainApp" ng-controller="mainCtrl">
+
+    <h1>GiphyTooltip Demo</h1>
+
+    <div class="toolTip" ng-show="show" ng-style="style">
+      <iframe class="frame" ng-src="{{url}}" alt="gif" frameBorder="0" ></iframe>
+    </div>
+    <div class="content">
+      <p>dog cat monkey dog cat monkey,,,,, dog cat monkey dog cat monkey dog cat monkey dog
+        cat monkey dog cat monkey dog cat monkey dog cat monkey dog cat monkey dog cat
+        monkey dog cat monkey dog cat monkey asdnasdn t monkey dog cat monkey dog cat monkey
+         dog cat monkey dog cat monkey dog cat monkey dog cat monkey dog cat monkey
+      </p>
+    </div>
+  </body>
+</html>
