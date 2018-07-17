@@ -18,9 +18,9 @@ app.controller('mainCtrl', ['$scope', 'httpCalls', '$sce', function($scope, http
     //replace all non-word character to + to search for phrase, and replace all dupulicate +
     $scope.q = $scope.q.replace(/\W/g, '+').replace(/\++/g, '+');
 
-    s = window.getSelection();
-    oRange = s.getRangeAt(0);
-    oRect = oRange.getBoundingClientRect();
+    let s = window.getSelection();
+    let oRange = s.getRangeAt(0);
+    let oRect = oRange.getBoundingClientRect();
 
     // determine when to show the tooltip
     if (oRect.width < 3 || $scope.q === $scope.previousSelection) {
